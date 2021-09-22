@@ -1,7 +1,7 @@
 ﻿<h1 align="center">
   <br>C</h1>
 
-<a id="pt-readme"></a>
+<a id="en-readme"></a>
 ## English | [Português](#pt-readme)
 
 Olá, neste repositório estão alguns algoritmos desenvolvidos em linguagem C durante meus estudos.
@@ -31,7 +31,7 @@ https://www.programiz.com/c-programming/online-compiler/
 
 -------
 
-<a id="en-readme"></a>
+<a id="pt-readme"></a>
 ## [English](#en-readme) | Português
 
 Hi, nice to meet you! This repository contains some algorithms developed in C language during my studies.
