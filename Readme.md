@@ -6,6 +6,7 @@
 
 Olá, neste repositório estão alguns algoritmos desenvolvidos em linguagem C durante meus estudos.
 
+
 ## Descrição dos programas
 
 - **Program1:** Recebe valor de segmentos de um triângulo e informa sua classificação.
@@ -22,10 +23,14 @@ Olá, neste repositório estão alguns algoritmos desenvolvidos em linguagem C d
 - **Program12:** Jogo do par ou ímpar.
 - **Program13:** Jogo da velha. 
 
+
+
 ## Como rodar os códigos
 
 Para rodar os códigos é necessária uma IDE C como o **DevC++, Eclipse** ... mas caso não tenha espaço no computador há a opção de rodar no Compilador on-line **Programiz**, basta copiar o programa inteiro e cola-lo no local de desenvolvimento do site e então clicar em RUN. 
 https://www.programiz.com/c-programming/online-compiler/
+
+
 
 ✨ Obrigada pela atenção! ✨
 
@@ -36,6 +41,7 @@ https://www.programiz.com/c-programming/online-compiler/
 
 
 Hi, nice to meet you! This repository contains some algorithms developed in C language during my studies.
+
 
 ## Description of programs
 
@@ -53,9 +59,13 @@ Hi, nice to meet you! This repository contains some algorithms developed in C la
 - **Program12:** Odd or even game.
 - **Program13:** Tic Tac Toe.
 
+
+
 ## How to run the codes
 
 To run the codes you need an IDE C like **DevC++,  Eclipse, VS Code** ... in case you don't have space on your computer there is an option to run it in the online Compiler **Programiz**, just copy the entire program and paste it into the site's development location and then click RUN.
 https://www.programiz.com/c-programming/online-compiler/
+
+
 
 ✨ Thanks for your attention! ✨
