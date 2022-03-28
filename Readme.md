@@ -9,19 +9,19 @@ Olá, neste repositório estão alguns algoritmos desenvolvidos em linguagem C d
 
 ## Descrição dos programas
 
-- **Program1:** Recebe valor de segmentos de um triângulo e informa sua classificação.
-- **Program2:** Ordenação de números.
-- **Program3:**   Calcula média entre 3 notas informadas e devolve a situação do estudante.
-- **Program4:** Calculadora de Bhaskara.
-- **Program5:** Jogo de adivinhação.
-- **Program6:** Calculadora de fatorial.
-- **Program7:** Calculadora da sequência de Fibonacci.
-- **Program8:** Calculadora de função bivariada. 
-- **Program9:** Ordenando números randomizados pelo programa com o bubble sort.
-- **Program10:** Jogo de loteria. 
-- **Program11:** Jogo da memória.
-- **Program12:** Jogo do par ou ímpar.
-- **Program13:** Jogo da velha. 
+- **Programa1:** Recebe valor de segmentos de um triângulo e informa sua classificação.
+- **Programa2:** Ordenação de números.
+- **Programa3:**   Calcula média entre 3 notas informadas e devolve a situação do estudante.
+- **Programa4:** Calculadora de Bhaskara.
+- **Programa5:** Jogo de adivinhação.
+- **Programa6:** Calculadora de fatorial.
+- **Programa7:** Calculadora da sequência de Fibonacci.
+- **Programa8:** Calculadora de função bivariada. 
+- **Programa9:** Ordenando números randomizados pelo programa com o bubble sort.
+- **Programa10:** Jogo de loteria. 
+- **Programa11:** Jogo da memória.
+- **Programa12:** Jogo do par ou ímpar.
+- **Programa13:** Jogo da velha. 
 
 
 
