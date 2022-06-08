@@ -1,8 +1,8 @@
 ﻿<h1 align="center">
   <br>C</h1>
 
-<a id="en-readme"></a>
-## English | [Português](#pt-readme)
+<a id="pt-readme"></a>
+## [English](#en-readme) | Português
 
 Olá, neste repositório estão alguns algoritmos desenvolvidos em linguagem C durante meus estudos.
 
@@ -27,8 +27,8 @@ Olá, neste repositório estão alguns algoritmos desenvolvidos em linguagem C d
 
 ## Como rodar os códigos
 
-Para rodar os códigos é necessária uma IDE C como o **DevC++, Eclipse** ... mas caso não tenha espaço no computador há a opção de rodar no Compilador on-line **Programiz**, basta copiar o programa inteiro e cola-lo no local de desenvolvimento do site e então clicar em RUN. 
-https://www.programiz.com/c-programming/online-compiler/
+Para rodar os códigos é necessária uma IDE C como o **DevC++, Eclipse** ... mas caso não tenha espaço no computador há a opção de rodar no Compilador on-line [Programiz](https://www.programiz.com/c-programming/online-compiler/), basta copiar o programa inteiro e cola-lo no local de desenvolvimento do site e então clicar em RUN. 
+
 
 
 
@@ -36,8 +36,8 @@ https://www.programiz.com/c-programming/online-compiler/
 
 -------
 
-<a id="pt-readme"></a>
-## [English](#en-readme) | Português
+<a id="en-readme"></a>
+## English | [Português](#pt-readme)
 
 
 Hi, nice to meet you! This repository contains some algorithms developed in C language during my studies.
@@ -63,8 +63,7 @@ Hi, nice to meet you! This repository contains some algorithms developed in C la
 
 ## How to run the codes
 
-To run the codes you need an IDE C like **DevC++,  Eclipse, VS Code** ... in case you don't have space on your computer there is an option to run it in the online Compiler **Programiz**, just copy the entire program and paste it into the site's development location and then click RUN.
-https://www.programiz.com/c-programming/online-compiler/
+To run the codes you need an IDE C like **DevC++,  Eclipse, VS Code** ... in case you don't have space on your computer there is an option to run it in the online Compiler [Programiz](https://www.programiz.com/c-programming/online-compiler/), just copy the entire program and paste it into the site's development location and then click RUN.
 
 
 
