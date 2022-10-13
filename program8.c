@@ -1,6 +1,6 @@
-/* Faça um programa que calcule os valores de uma função bivariada dada pela expressão: f(x,y) = x^2 + y^2 
- Os parâmetros devem variar x: 0 <= x < 100, incrementando 2,5 a cada interação.
- 							y: -100 < y <= 0, incrementando 5 a cada interação. */
+/* FaÃ§a um programa que calcule os valores de uma funÃ§Ã£o bivariada dada pela expressÃ£o: f(x,y) = x^2 + y^2 
+ Os parÃ¢metros devem variar x: 0 <= x < 100, incrementando 2,5 a cada interaÃ§Ã£o.
+ 							y: -100 < y <= 0, incrementando 5 a cada interaÃ§Ã£o. */
  
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,19 +9,19 @@
 int main(void) {
 setbuf(stdout,NULL);
 
-	//declarações
+	//declaraÃ§Ãµes
 	float n1, n2, resultado;
 	
 	//recebendo valores
-	printf("Digite o primeiro número a ser calculado de acordo com a função: \n");
+	printf("Digite o primeiro nÃºmero a ser calculado de acordo com a funÃ§Ã£o: \n");
 	scanf("%f",&n1);
 	
-	printf("Digite o segundo número a ser calculado de acordo com a função: \n");
+	printf("Digite o segundo nÃºmero a ser calculado de acordo com a funÃ§Ã£o: \n");
 	scanf("%f",&n2);
 	
-	//lógica do programa
+	//lÃ³gica do programa
 	while( !(( 0 <= n1 && n1 < 100 ) && ( -100 < n2 && n2 <= 0)) ){
-		printf("O número deve ser entre os intervalos delimitados! Tente novamente \n");
+		printf("O nÃºmero deve ser entre os intervalos delimitados! Tente novamente \n");
 		scanf("%f%f",&n1,&n2);
 	}
 	int aux = n2;
