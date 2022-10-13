@@ -1,12 +1,12 @@
 /* Jogo da Velha. Jogo disputado por dois jogadores, com objetivo de formar uma linha horizontal,
-vertical ou diagonal de três xis ou círculos, numa das nove entrelinhas de uma figura de quatro
+vertical ou diagonal de trÃªs xis ou cÃ­rculos, numa das nove entrelinhas de uma figura de quatro
 linhas em forma de (#) cerquilha.
-Nesse exercício, você deve fazer um jogo da velha. Inicialmente, o programa deve guardar e escrever
+Nesse exercÃ­cio, vocÃª deve fazer um jogo da velha. Inicialmente, o programa deve guardar e escrever
 na tela um tabuleiro de jogo da velha. Depois, seu programa deve permitir que 2 jogadores humanos
 possam jogar um contra o outro. Finalmente, permita que o jogador humano possa jogar contra o 
-computador.? O programa também deve permitir selecionar entre jogar contra um jogador humano ou o
+computador.? O programa tambÃ©m deve permitir selecionar entre jogar contra um jogador humano ou o
 computador.
-Dica. Faça o programa perguntar qual a linha e coluna que o jogador que marcar. Não esqueça de validar
+Dica. FaÃ§a o programa perguntar qual a linha e coluna que o jogador que marcar. NÃ£o esqueÃ§a de validar
 o valor, ou seja, deve ser entre os limites da matriz. */
  
 #include <stdio.h>
@@ -15,7 +15,7 @@ o valor, ou seja, deve ser entre os limites da matriz. */
 #include <time.h>
 #include <windows.h>
 
-// declaraçao de constantes
+// declaraÃ§ao de constantes
 #define DIM 3
 
 void mostrar_tabuleiro(char tabuleiro[DIM][DIM]);
@@ -26,7 +26,7 @@ int main(void) {
 	setlocale(LC_ALL, "Portuguese");
 	srand(time(NULL));
 	
-	// declarações
+	// declaraÃ§Ãµes
 	char tabuleiro[DIM][DIM] = {{' ', ' ', ' '}, {' ', ' ', ' '}, {' ', ' ', ' '}};
 	int preenchido = 0, venceu = 0, numMaquinaX, numMaquinaY, mode, coordenadaX, coordenadaY, b1, b2, b3, b4, a1, a2, a3, a4, a5, a6; 
 	
@@ -36,13 +36,13 @@ int main(void) {
 	system("cls"); // limpa tela
 	
 	
-	printf("Escolha o modo de jogo desejado:\n [1] - Jogar local, Player 1 vs Player 2.\n [2] - Jogar contra máquina. \nDigite: ");
+	printf("Escolha o modo de jogo desejado:\n [1] - Jogar local, Player 1 vs Player 2.\n [2] - Jogar contra mÃ¡quina. \nDigite: ");
 	scanf(" %d", &mode);
 	system("cls"); // limpa tela
 	
 	carregando(); 
 	
-	// recebendo valores - lógica 
+	// recebendo valores - lÃ³gica 
 	switch(mode)
 	{
 		case 1: // player1 vs player2
@@ -52,37 +52,37 @@ int main(void) {
 			  	while (a1 == 0){
 				  	a2 = 0;
 				  	while(a2 == 0){
-					  	printf("Você é o X.\nDigite a coordenada X da posição que deseja marcar: "); // recebe valor de coordenada X do jogador
+					  	printf("VocÃª Ã© o X.\nDigite a coordenada X da posiÃ§Ã£o que deseja marcar: "); // recebe valor de coordenada X do jogador
 					  	scanf(" %d", &coordenadaX);	
 					  	
 						if(coordenadaX >= 0 && coordenadaX < 3){          // limita a resposta da coordenada X de 0 - 2
 						  	a2++;
 							break;
 						} else {
-							printf("O número deve estar entre 0 e 2!\n");
+							printf("O nÃºmero deve estar entre 0 e 2!\n");
 							a2 = 0;	
 						}
 					}
 					
 					a3 = 0; 
 					while(a3 == 0){
-					  	printf("Digite a coordenada Y da posição que deseja marcar: ");        // recebe valor da coordenada Y do jogador
+					  	printf("Digite a coordenada Y da posiÃ§Ã£o que deseja marcar: ");        // recebe valor da coordenada Y do jogador
 					  	scanf(" %d", &coordenadaY);	 
 					  	
 						if(coordenadaY >= 0 && coordenadaY < 3){          // limita a resposta da coordenada Y de 0 - 2
 						  	a3++;
 							break;
 						} else {
-							printf("O número deve estar entre 0 e 2!\n");
+							printf("O nÃºmero deve estar entre 0 e 2!\n");
 							a3 = 0;	
 						}
 					}
 							
-					if (tabuleiro[coordenadaX][coordenadaY] == ' '){     // verifica se a coordenada em questão esta preenchida
+					if (tabuleiro[coordenadaX][coordenadaY] == ' '){     // verifica se a coordenada em questÃ£o esta preenchida
 						tabuleiro[coordenadaX][coordenadaY] = 'X'; 
 						a1++; 
 					} else {
-						printf("Esta coordenada já esta preenchida, tente uma válida. ");
+						printf("Esta coordenada jÃ¡ esta preenchida, tente uma vÃ¡lida. ");
 						a1 = 0; 
 					}
 				}
@@ -106,9 +106,9 @@ int main(void) {
 					venceu = 1; 
 				}
 			
-				if (preenchido == 8 || preenchido == 9){       // se o tabuleiro não teha mais espaços saia
+				if (preenchido == 8 || preenchido == 9){       // se o tabuleiro nÃ£o teha mais espaÃ§os saia
 					continue;
-				} else if (venceu == 1) {                      // caso alguém tenha ganho o jogo saia
+				} else if (venceu == 1) {                      // caso alguÃ©m tenha ganho o jogo saia
 					continue; 
 				}else {
 				
@@ -118,43 +118,43 @@ int main(void) {
 					a5 = 0;
 				  	while(a5 == 0){
 				  		
-					printf("Você é o O.\nDigite a coordenada X da posição que deseja marcar: "); // recebe valor de coordenada X do jogador 2
+					printf("VocÃª Ã© o O.\nDigite a coordenada X da posiÃ§Ã£o que deseja marcar: "); // recebe valor de coordenada X do jogador 2
 					scanf(" %d", &coordenadaX);	
 					  	
 					if(coordenadaX >= 0 && coordenadaX < 3){          // limita a resposta da coordenada X de 0 - 2
 						a5++;
 						break;
 					} else {
-						printf("O número deve estar entre 0 e 2!\n");
+						printf("O nÃºmero deve estar entre 0 e 2!\n");
 						a5 = 0;	
 					}
 					}
 				
 					a6 = 0;
 				  	while(a6 == 0){
-					printf("Digite a coordenada Y da posição que deseja marcar: ");        // recebe valor da coordenada Y do jogador 2
+					printf("Digite a coordenada Y da posiÃ§Ã£o que deseja marcar: ");        // recebe valor da coordenada Y do jogador 2
 					scanf(" %d", &coordenadaY);	 
 						  	
 					if(coordenadaY >= 0 && coordenadaY < 3){          // limita a resposta da coordenada Y de 0 - 2
 						a6++;
 						break;
 					} else {
-						printf("O número deve estar entre 0 e 2!\n");
+						printf("O nÃºmero deve estar entre 0 e 2!\n");
 						a6 = 0;	
 					}	
 					}
 					
-					if (tabuleiro[coordenadaX][coordenadaY] == ' '){    // verifica se a coordenada em questão esta preenchida
+					if (tabuleiro[coordenadaX][coordenadaY] == ' '){    // verifica se a coordenada em questÃ£o esta preenchida
 						tabuleiro[coordenadaX][coordenadaY] = 'O'; 
 						a4++; 
 					} else {
-						printf("Esta coordenada já esta preenchida, tente uma válida. ");
+						printf("Esta coordenada jÃ¡ esta preenchida, tente uma vÃ¡lida. ");
 						a4 = 0;
 					}
 				}
 				}
 				
-			// lógica do programa
+			// lÃ³gica do programa
 				preenchido = 0; 
 				for (int v = 0; v < 3; v++){          // mostra quantas casas do tabuleiro estao preenchidas
 				for(int r = 0; r < 3; r++){
@@ -179,27 +179,27 @@ int main(void) {
 			  	while (b1 == 0){
 				  	b2 = 0;
 				  	while(b2 == 0){
-					  	printf("Você é o X.\nDigite a coordenada X da posição que deseja marcar: "); // recebe valor de coordenada X do jogador
+					  	printf("VocÃª Ã© o X.\nDigite a coordenada X da posiÃ§Ã£o que deseja marcar: "); // recebe valor de coordenada X do jogador
 					  	scanf(" %d", &coordenadaX);	
 					  	
 						  if(coordenadaX >= 0 && coordenadaX < 3){          // limita a resposta da coordenada X de 0 - 2
 						  	b2++;
 							break;
 						  } else {
-							printf("O número deve estar entre 0 e 2!\n");
+							printf("O nÃºmero deve estar entre 0 e 2!\n");
 							b2 = 0;	
 							}
 					}
 					b3 = 0; 
 					while(b3 == 0){
-					  	printf("\nDigite a coordenada Y da posição que deseja marcar: ");        // recebe valor da coordenada Y do jogador
+					  	printf("\nDigite a coordenada Y da posiÃ§Ã£o que deseja marcar: ");        // recebe valor da coordenada Y do jogador
 					  	scanf(" %d", &coordenadaY);	 
 					  	
 						  if(coordenadaY >= 0 && coordenadaY < 3){          // limita a resposta da coordenada X de 0 - 2
 						  	b3++;
 							break;
 						  } else {
-							printf("O número deve estar entre 0 e 2!\n");
+							printf("O nÃºmero deve estar entre 0 e 2!\n");
 							b3 = 0;	
 							}
 					}
@@ -208,7 +208,7 @@ int main(void) {
 						tabuleiro[coordenadaX][coordenadaY] = 'X'; 
 						b1++; 
 					} else {
-						printf("Esta coordenada já esta preenchida, tente uma válida. ");
+						printf("Esta coordenada jÃ¡ esta preenchida, tente uma vÃ¡lida. ");
 						b1 = 0; 
 				}
 			}
@@ -241,8 +241,8 @@ int main(void) {
 			}else {
 			b4 = 0;	
 			while(b4 == 0){
-				numMaquinaX = rand() % 3; // recebendo valor X da máquina 
-				numMaquinaY = rand() % 3; // recebendo valor Y da máquina
+				numMaquinaX = rand() % 3; // recebendo valor X da mÃ¡quina 
+				numMaquinaY = rand() % 3; // recebendo valor Y da mÃ¡quina
 				
 				if (tabuleiro[numMaquinaX][numMaquinaY] == ' '){
 					tabuleiro[numMaquinaX][numMaquinaY] = 'O'; 
@@ -253,7 +253,7 @@ int main(void) {
 			}
 			}
 		
-			// lógica do programa
+			// lÃ³gica do programa
 				preenchido = 0; 
 				for (int v = 0; v < 3; v++){          // mostra quantas casas do tabuleiro estao preenchidas
 				for(int r = 0; r < 3; r++){
@@ -364,7 +364,7 @@ void mostrar_tabuleiro(char tabuleiro[DIM][DIM]){
 	printf("-------------------------\n");
 }
 
-	void carregando(){               //animação de carregamento 
+	void carregando(){               //animaÃ§Ã£o de carregamento 
 	for(int i=0; i<5; i++){
 		printf("carregando\n");
 		printf("~------");
