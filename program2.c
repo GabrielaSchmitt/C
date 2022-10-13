@@ -1,4 +1,4 @@
-// Faça um programa que leia 3 números inteiros A, B e C, com sinal, e mostre-os em ordem crescente ou decrescente, conforme a opção do usuário. Por exemplo:
+// FaÃ§a um programa que leia 3 nÃºmeros inteiros A, B e C, com sinal, e mostre-os em ordem crescente ou decrescente, conforme a opÃ§Ã£o do usuÃ¡rio. Por exemplo:
 // Digite A: 5
 // Digite B: -10
 // Digite C: 1
@@ -9,26 +9,26 @@
 #include <stdlib.h>
 
 int main() {
-    // declare as variáveis que serão utilizadas
+    // declare as variÃ¡veis que serÃ£o utilizadas
     float n1, n2, n3;
     char ordem;
     
     //recebendo valores
-    printf("Informe o 1° número: ");
+    printf("Informe o 1Â° nÃºmero: ");
     scanf("%f", &n1);
     
-    printf("Informe o 2° número: ");
+    printf("Informe o 2Â° nÃºmero: ");
     scanf("%f", &n2);
     
-    printf("Informe o 3° número: ");
+    printf("Informe o 3Â° nÃºmero: ");
     scanf("%f", &n3);
     
     printf("Informe a ordem desejada, digite \n[D] para decrescente e \n[C] para crescente: ");
     scanf(" %c", &ordem);
 
-    //Lógica do programa e tela
+    //LÃ³gica do programa e tela
     
-    //se todos são iguais
+    //se todos sÃ£o iguais
     if (n1 == n2 && n2 == n3){ 
     	printf("A ordem possui apenas numeros iguais: %.1f %.1f %.1f", n3, n2, n1);
 	}
