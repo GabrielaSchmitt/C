@@ -1,12 +1,12 @@
-/* FaÁa um programa que jogue par ou Ìmpar com o usu·rio. O programa pede para o 
-jogador escolher a opÁ„o "P - Par" ou "I - Impar" e digitar um n˙mero de 1 a 5. 
-Depois, o programa sorteia um n˙mero de 1 a 5. Caso a soma dos n˙meros corresponda 
-a opÁ„o selecionada, o jogador ganha, caso contr·rio, o jogador perde. Ao tÈrmino de 
+/* Fa√ßa um programa que jogue par ou √≠mpar com o usu√°rio. O programa pede para o 
+jogador escolher a op√ß√£o "P - Par" ou "I - Impar" e digitar um n√∫mero de 1 a 5. 
+Depois, o programa sorteia um n√∫mero de 1 a 5. Caso a soma dos n√∫meros corresponda 
+a op√ß√£o selecionada, o jogador ganha, caso contr√°rio, o jogador perde. Ao t√©rmino de 
 cada partida, o programa pergunta ao jogador "S-Sim" ou "N-Nao" se ele quer jogar
  outra vez e mostra um placar (Computador: N pontos x Humano: M pontos). 
-Caso o jogador opte pela opÁ„o "N-Nao", o programa termina.
+Caso o jogador opte pela op√ß√£o "N-Nao", o programa termina.
 
-Obs.: validar o n˙mero digitados pelo jogador, ou seja, deve ser entre 1 e 5. */
+Obs.: validar o n√∫mero digitados pelo jogador, ou seja, deve ser entre 1 e 5. */
 
 #include <stdio.h>
 #include <conio.h>
@@ -21,7 +21,7 @@ int main() {
 	setlocale(LC_ALL, "Portuguese");
 	srand(time(NULL));
 	
-	// declaraÁıes
+	// declara√ß√µes
 	int numUser, numMaquina, soma, computador, humano;
 	char poui, again;
 	
@@ -32,42 +32,42 @@ int main() {
 	while (again == 'S' || again == 's'){
 	
 		// recebendo valores
-		printf("JOGO DO PAR OU ÕMPAR! \nEscolha [P] - PAR ou [I] - ÕMPAR: ");
+		printf("JOGO DO PAR OU √çMPAR! \nEscolha [P] - PAR ou [I] - √çMPAR: ");
 		scanf(" %c", &poui);
 		
 		numUser = 0;
 		while (numUser < 1 || numUser > 5){
-			printf("Digite um n˙mero de 1 ‡ 5: ");
+			printf("Digite um n√∫mero de 1 √† 5: ");
 			scanf(" %d", &numUser);
 		}
 		 
-		numMaquina = 1 + rand() % 5; // recebendo valor da m·quina
+		numMaquina = 1 + rand() % 5; // recebendo valor da m√°quina
 		printf("Computador: %d", numMaquina);
 		
-		// lÛgica do programa
+		// l√≥gica do programa
 		soma = numMaquina + numUser;
 		printf("\nSoma: %d", soma);
 		
 		if (soma % 2 == 0) {
 			if(poui == 'P' || poui == 'p'){
-				printf("\nParabÈns! VocÍ ganhou.");
+				printf("\nParab√©ns! Voc√™ ganhou.");
 				humano++;
 			} else {
-				printf("\nVish! VocÍ perdeu.");
+				printf("\nVish! Voc√™ perdeu.");
 				computador++;			
 			}
 		} else {
 			if(poui == 'I' || poui == 'i'){
-				printf("\nParabÈns! VocÍ ganhou.");
+				printf("\nParab√©ns! Voc√™ ganhou.");
 				humano++;
 			} else {
-				printf("\nVish! VocÍ perdeu.");
+				printf("\nVish! Voc√™ perdeu.");
 				computador++;			
 			}		
 		}
 		
 		printf("\nPLACAR: \nComputador: %d pontos x Humano: %d pontos.", computador, humano);
-		printf("\nGostaria de jogar novamente? [S] - sim, [N] - n„o: ");
+		printf("\nGostaria de jogar novamente? [S] - sim, [N] - n√£o: ");
 		scanf(" %c", &again);
 	}
 	
