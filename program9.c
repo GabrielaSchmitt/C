@@ -1,8 +1,8 @@
-/* FaÁa um programa que sorteie 20 n˙meros inteiros de 1 a 100 e mostre-os em ordem crescente.
-Obs.: os n˙meros sorteados n„o podem ter repetiÁ„o.
-Usei o bubble sort o qual se baseia do seguinte modo: imagine que h· bolhas embaixo da ·gua e que as 
-maiores sobem mais r·pido ‡ superfÌcie mas nesse caso n„o podem ocupar a mesma camada, deste modo a 
-maior bolha ficaria mais prÛxima do topo e assim por diante. Esta È a teoria de ordem do bubble sort. */ 
+/* Fa√ßa um programa que sorteie 20 n√∫meros inteiros de 1 a 100 e mostre-os em ordem crescente.
+Obs.: os n√∫meros sorteados n√£o podem ter repeti√ß√£o.
+Usei o bubble sort o qual se baseia do seguinte modo: imagine que h√° bolhas embaixo da √°gua e que as 
+maiores sobem mais r√°pido √† superf√≠cie mas nesse caso n√£o podem ocupar a mesma camada, deste modo a 
+maior bolha ficaria mais pr√≥xima do topo e assim por diante. Esta √© a teoria de ordem do bubble sort. */ 
 
 #include <stdio.h>
 #include <conio.h>
@@ -10,7 +10,7 @@ maior bolha ficaria mais prÛxima do topo e assim por diante. Esta È a teoria de 
 #include <stdlib.h>
 #include <time.h>
 
-void swap(int *xp, int *yp) // funÁ„o para fazer a troca de lugar dos valores
+void swap(int *xp, int *yp) // fun√ß√£o para fazer a troca de lugar dos valores
 {
     int temp = *xp;
     *xp = *yp;
@@ -21,26 +21,26 @@ int main() {
 	//setbuf(stdout,NULL); 
 	setlocale(LC_ALL, "Portuguese");
 	
-	// declaraÁıes
+	// declara√ß√µes
 	int vetor[20], i, v, teste, j;
 	srand(time(NULL));
 	
-	// recebendo valores randomicos que n„o se repetem
+	// recebendo valores randomicos que n√£o se repetem
 	for(i = 0; i < 20; i++){               // valores dos vetores
 		if(i == 0){                        // se for o primeiro vetor
 			vetor[i] = 1 + rand() %101;    // apenas atribui valor a ele
-		}else {                            // sen„o
+		}else {                            // sen√£o
 		teste = 0;
 			while(teste == 0){            
 			teste++;
-			v = 1 + rand() %101;           // randomiza n˙mero p variavel v
-	           	for (j = 0; j < i; j++) {  // percorre vetores j· preenchidos
-					if (v == vetor[j]) {   // se o valor randomizado j· foi atribuido a um vetor
+			v = 1 + rand() %101;           // randomiza n√∫mero p variavel v
+	           	for (j = 0; j < i; j++) {  // percorre vetores j√° preenchidos
+					if (v == vetor[j]) {   // se o valor randomizado j√° foi atribuido a um vetor
 	                teste = 0;             // permanece dentro do while 
 					}			     
 				}
 			}
-		vetor[i] = v;                      // se o valor randomizado È unico perante aos vetores j· preenchidos, atribua-o
+		vetor[i] = v;                      // se o valor randomizado √© unico perante aos vetores j√° preenchidos, atribua-o
 		}
 	}
 	
@@ -53,7 +53,7 @@ int main() {
               swap(&vetor[l], &vetor[l+1]);
 	}	}	}
               
-	// tela de resposta ao usu·rio 
+	// tela de resposta ao usu√°rio 
 	printf("Sorted array: \n");
 	for (int y=0; y < n; y++){
         printf("%d ", vetor[y]);
