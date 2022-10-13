@@ -1,4 +1,4 @@
-//Faça um programa que calcule o fatorial de um número inteiro informado pelo usuário. Validar a entrada pois o número precisa ser positivo.
+//FaÃ§a um programa que calcule o fatorial de um nÃºmero inteiro informado pelo usuÃ¡rio. Validar a entrada pois o nÃºmero precisa ser positivo.
 
 #include <stdio.h>
 #include <locale.h>
@@ -7,18 +7,18 @@
 int main() {
 	setlocale(LC_ALL, "Portuguese");
 	
-	//declarando variáveis
+	//declarando variÃ¡veis
 	int num, fato;
 	
 	//recebendo valores
 	num = -6;
 	
 	while (num < 0){
-		printf("Digite um número inteiro pra saber sua fatorial: ");
+		printf("Digite um nÃºmero inteiro pra saber sua fatorial: ");
 		scanf(" %d", &num);
 	}
 	
-	//lógica do programa
+	//lÃ³gica do programa
 	if (num > 0){
 		for(fato = 1; num > 1; num--){
 			fato = fato * num;
