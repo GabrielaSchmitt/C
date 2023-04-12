@@ -22,7 +22,7 @@ Olá, neste repositório estão alguns algoritmos desenvolvidos em linguagem C d
 - **Programa11:** Jogo da memória.
 - **Programa12:** Jogo do par ou ímpar.
 - **Programa13:** Jogo da velha. 
-
+- **Pointers:** programa para entender endereçamento de ponteiros e ponteiro de ponteiros.
 
 
 ## Como rodar os códigos
@@ -58,6 +58,7 @@ Hi, nice to meet you! This repository contains some algorithms developed in C la
 - **Program11:** Memory game.
 - **Program12:** Odd or even game.
 - **Program13:** Tic Tac Toe.
+- **Pointers:** Study program to understand pointer of pointer and how to assign each value wanted correctly.
 
 
 
