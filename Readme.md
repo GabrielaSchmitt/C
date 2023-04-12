@@ -22,7 +22,7 @@ Olá, neste repositório estão alguns algoritmos desenvolvidos em linguagem C d
 - **Programa11:** Jogo da memória.
 - **Programa12:** Jogo do par ou ímpar.
 - **Programa13:** Jogo da velha. 
-- **Pointers:** programa para entender endereçamento de ponteiros e ponteiro de ponteiros.
+- **Pointers:** Programa para entender endereçamento de ponteiros e ponteiro de ponteiros.
 
 
 ## Como rodar os códigos
